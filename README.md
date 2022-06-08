@@ -25,6 +25,6 @@
     =>  const add = document.querySelector('.shoppingList').textContent = addText;
   
 **4. 개선할 점**
-1. list의 일정 개수가 넘어갈 시 '+' 버튼 아래로 list가 내려가는 현상
+1. list의 일정 개수가 넘어갈 시 '+' 버튼 아래로 list가 내려가는 현상 --> Markup이 문제
 2. click 외에도 enter키를 이용한 입력
 3. text 입력 후 다음 입력을 위한 input창의 text 지우기
