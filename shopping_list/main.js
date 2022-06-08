@@ -1,48 +1,36 @@
-const plusBtn = document.querySelector('button');
-plusBtn.addEventListener('click', () => {
-    newList();
+//  .footer > button 을 클릭 or enter하면 
+//  addText.value 가 list로 만들어짐
+//  동시에 쓰레기통 아이콘 등장
+
+//  쓰레기통 아이콘 클릭 시 list 삭제
+
+
+
+
+const addBtn = document.querySelector('.addBtn');
+addBtn.addEventListener('click', () => {
+    addList();
 });
 
-function newList () {
-    const shoppingList = document.querySelector('.shoppingList');
-    const name = document.querySelector('.addText').value;
+function addList(){
+    const addText = document.querySelector('.addText').value;
     const li = document.createElement('li');
+    const button = document.createElement('button');
+    const ul = document.querySelector('.itemList');
     const i = document.createElement('i');
     i.setAttribute('class', 'fa-solid fa-trash-can');
-    shoppingList.prepend(li);
-    li.textContent = name;
-    li.append(i);
-    const minusBtn = document.querySelector('i');
-    minusBtn.addEventListener('click', () => {
-        li.remove()
+    button.setAttribute('class', 'deleteBtn');
+    li.setAttribute('class', 'itemRow');
+
+    li.textContent = addText;
+    ul.append(li);
+    li.append(button);
+    button.append(i);
+    button.addEventListener('click', ()=>{
+        li.remove();
     })
-
+    
 };
-
-
-
-
-
-
-
-        // function newList () {
-        //     const addText = document.querySelector('.addText').value;
-        //     const shoppingList = document.querySelector('.shoppingList');
-        //     const li = document.createElement('li');
-        //     const add = document.querySelector('.shoppingList').textContent = addText;
-        //     li.prepend(add);
-        //     shoppingList.prepend(li);
-        // };
-
-
-// function printList(){
-//             const name = document.querySelector('.addText').value;
-//             document.querySelector('.shoppingList').textContent = name;
-//         };
-
-
-
-
 
 
 
