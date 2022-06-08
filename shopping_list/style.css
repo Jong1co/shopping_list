@@ -1,76 +1,87 @@
-:root {
-    /* Color */
-    --pink-color: #e7b8cf;
-    --blue-color: #83b3e9;
-    --white-color: rgb(255, 255, 255);
-    --black-color: rgb(24, 24, 24);
-    --grey-color: #f0eef4;
-
-    /* Size */
-    --font-large: 22px;
-    --font-medium: 16px;
-    --side-padding: 16px;
-    --updown-padding: 8px;
-}
-
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-
-
-li {
-    padding: var(--side-padding);
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+section {
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    width: 20vw;
+    height: 70vh;
+    margin: auto;
+    border-radius: 20px;
+    -webkit-box-shadow: 12px 7px 15px 5px rgba(0,0,0,0.21); 
+    box-shadow: 12px 7px 15px 5px rgba(0,0,0,0.21);
 }
 
 button {
+    background: transparent;
     border: none;
-    background: none;
     cursor: pointer;
-    padding: 10px;
 }
 
-header {
+li {
+    list-style: none;
     display: flex;
-    background: linear-gradient(to bottom right, var(--pink-color), var(--blue-color));
-    width: 100%;
+    justify-content: space-between;
+    padding: 16px 32px;
+    align-items: center;
+    font-size: 20px;
+}
+
+.header {
+    font-size: 3vh;
+    padding: 3vh;
+    color: white;
+    background: linear-gradient(to bottom right, #e7b8cf, #83b3e9);
+    border-radius: 20px 20px 0 0;
+}
+
+.shoppingList {
+    height: 50vh;
+}
+
+.itemRow i {
+    font-size: 20px;
+}
+
+.deleteBtn:hover {
+   transform: scale(1.1);
+   color: red;
+}
+
+.deleteBtn {
+    transition: transform 300ms ease-in;
+}
+
+.footer {
+    background: linear-gradient(to bottom right, #e7b8cf, #83b3e9);
     height: 10vh;
-    color: var(--white-color);
-    justify-content: center;
-    align-items: center;
-    font-size: var(--font-large);
+    border-radius: 0 0 20px 20px;
 }
 
-.shoppingList{
-    background-color: var(--grey-color);
+.addText {
     width: 100%;
-    height: 70vh;
-}
-
-input {
-    width: 100%;
+    outline: none;
     border: none;
-    height: 7vh;
+    height: 32px;
+    font-size: 24px;
 }
 
-.plusBtn {
-    display: flex;
-    background: linear-gradient(to bottom right, var(--pink-color), var(--blue-color));
-    height: 13vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
-.plusBtn > button > i {
+.footer i {
+    color: white;
     font-size: 32px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.addBtn {
+    transition: transform 300ms ease-in;
+}
+
+.addBtn:hover {
+    transform: scale(1.1);
 }
