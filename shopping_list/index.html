@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Shopping List</title>
     <script src="https://kit.fontawesome.com/827eb37611.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>Shopping List</header>
-    <div class="shoppingList"></div>
-    <input type="text" class="addText">
-    <div class="plusBtn">
-        <button><i class="fa-solid fa-circle-plus"></i></button>
-    </div>
-    <script src="main.js" defer></script>
+    <section>
+        <header class="header">Shopping List</header>
+        <div class="shoppingList">
+            <ul class="itemList">
 
+            </ul>
+        </div>
+        <footer class="footer">
+            <input type="text" class="addText">
+            <button class="addBtn"><i class="fa-solid fa-plus"></i></button>
+        </footer>
+    </section>
 </body>
 </html>
