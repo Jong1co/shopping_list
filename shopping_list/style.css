@@ -1,0 +1,76 @@
+:root {
+    /* Color */
+    --pink-color: #e7b8cf;
+    --blue-color: #83b3e9;
+    --white-color: rgb(255, 255, 255);
+    --black-color: rgb(24, 24, 24);
+    --grey-color: #f0eef4;
+
+    /* Size */
+    --font-large: 22px;
+    --font-medium: 16px;
+    --side-padding: 16px;
+    --updown-padding: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+li {
+    padding: var(--side-padding);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    background: linear-gradient(to bottom right, var(--pink-color), var(--blue-color));
+    width: 100%;
+    height: 10vh;
+    color: var(--white-color);
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-large);
+}
+
+.shoppingList{
+    background-color: var(--grey-color);
+    width: 100%;
+    height: 70vh;
+}
+
+input {
+    width: 100%;
+    border: none;
+    height: 7vh;
+}
+
+.plusBtn {
+    display: flex;
+    background: linear-gradient(to bottom right, var(--pink-color), var(--blue-color));
+    height: 13vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.plusBtn > button > i {
+    font-size: 32px;
+}
