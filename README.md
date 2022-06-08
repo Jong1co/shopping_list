@@ -16,6 +16,7 @@
   1. list 우측 쓰레기통 아이콘 클릭
 
 **3. 해결한 에러사항**
+
   --shopping list 추가 기능--
   1. shopping list를 추가할 때 list 외에 text가 한 줄 더 추가되는 현상
     =>  Node.textContent 의 오용
